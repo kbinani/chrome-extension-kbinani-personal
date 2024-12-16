@@ -1,0 +1,6 @@
+div#wiki-content div.sidecolumn {
+  position: unset !important;
+  overflow-y: unset !important;
+  height: unset !important;
+  border: unset !important;
+}

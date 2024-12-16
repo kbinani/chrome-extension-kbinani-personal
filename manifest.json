@@ -1,0 +1,27 @@
+{
+  "name": "個人用chrome extension",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://seesaawiki.jp/hololivetv/*"
+      ],
+      "js": [
+        "seesaawiki.jp/hololivetv/js/main.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "seesaawiki.jp/hololivetv/css/*.css"
+      ],
+      "matches": [
+        "https://seesaawiki.jp/*"
+      ]
+    }
+  ]
+}
